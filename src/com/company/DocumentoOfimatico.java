@@ -1,7 +1,6 @@
 package com.company;
 
-public class DocumentoOfimatico <T>{
-
+public class DocumentoOfimatico {
     String nombreArchivo;
     String tamanyo;
 
@@ -24,5 +23,14 @@ public class DocumentoOfimatico <T>{
 
     public void setTamanyo(String tamanyo) {
         this.tamanyo = tamanyo;
+    }
+
+
+    @Override
+    public String toString() {
+        return "DocumentoOfimatico{" +
+                "nombreArchivo='" + nombreArchivo + '\'' +
+                ", tamanyo='" + tamanyo + '\'' +
+                '}';
     }
 }

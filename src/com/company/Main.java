@@ -1,36 +1,56 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Scanner;
-import
+
 public class Main {
 
     public static void main(String[] args) {
-        Scanner lector = new Scanner(System.in);
+
         int opcion;
+        int mantenerWhile = 0;
+        Scanner lector = new Scanner(System.in);
 
 
 
-        System.out.println("Seleccione una opción:");
-        opcion = lector.nextInt();
 
 
-        switch (opcion){
+        while(mantenerWhile == 6){
 
-            case 1:
-                encenderImpresora();
+            System.out.println("Seleccione una opción:");
+            opcion = lector.nextInt();
+            switch (opcion){
 
-            case 2:
+                case 1:
+                    .encenderImpresora();
+
+                break;
+
+                case 2:
+                    .apagarImpresora();
+
+                case 3:
+                    .anyadirTrabajo();
+
+                case 4:
+                    .verListaTrabajo();
+
+                case 5:
+                    listaDocumentos.imprimir();
+
+                case 6:
+                    mantenerWhile = 6;
 
 
-            case 3:
 
-            case 4:
 
-            case 5:
+            }
 
-            case 6:
 
         }
+
+
+
 
 
     }
